@@ -1,4 +1,6 @@
 function doValidations(frm){
+
+   
 	//empty old form validation error messgaes
 	document.getElementById("enameErr").innerHTML="";
 	document.getElementById("jobErr").innerHTML="";
@@ -11,7 +13,9 @@ function doValidations(frm){
 	let salary=frm.sal.value;
 	let deptno=frm.deptno.value;
 	
-	let isValid=true;
+	frm.vflag.value="no";
+	
+     let isValid=true;
 	
 	//write client side form validation logics
 	if(name==""){// required rule
@@ -45,8 +49,8 @@ function doValidations(frm){
 		isValid=false;
 	}
 	
-	if(deptno==""){//required rule
-	    document.getElementById("salErr").innerHTML="Employee deptno is mandatory";
+	 if(deptno==""){//required rule
+	    document.getElementById("deptnoErr").innerHTML="Employee deptno is mandatory";
 	    isValid=false;
 	}
 	return isValid;
