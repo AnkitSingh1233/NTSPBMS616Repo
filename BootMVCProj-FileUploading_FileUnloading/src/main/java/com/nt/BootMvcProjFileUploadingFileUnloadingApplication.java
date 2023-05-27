@@ -9,7 +9,7 @@ import org.springframework.web.multipart.support.StandardServletMultipartResolve
 public class BootMvcProjFileUploadingFileUnloadingApplication {
 	
 	
-	@Bean("multipartResolver")
+	@Bean(name="multipartResolver")
 	public StandardServletMultipartResolver createResolver() {
 		
 		

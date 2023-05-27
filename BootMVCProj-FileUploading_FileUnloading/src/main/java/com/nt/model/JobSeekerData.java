@@ -1,4 +1,4 @@
-package com.nt.entity;
+package com.nt.model;
 
 import java.io.Serializable;
 
@@ -10,14 +10,12 @@ import lombok.Data;
 public class JobSeekerData implements Serializable {
 
 	
-	private String jsId;
-	
+	private Integer jsId;
 	private String jsName;
-	
 	private String jsAddrs;
-	
 	private MultipartFile resume;
-	
 	private MultipartFile photo;
+	
+	
 	
 }

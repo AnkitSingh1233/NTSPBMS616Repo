@@ -1,4 +1,4 @@
-<%@ page =isELIgnored="false"%>
+<%@ page isELIgnored="false"%>
 
 
 Result is:::${resultMsg}
